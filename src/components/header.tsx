@@ -9,13 +9,6 @@ import Image from "next/image";
 const navItems = [
   { name: "首页", href: "/" },
   { name: "合集", href: "/posts" },
-  {
-    name: "分类",
-    href: "/moments",
-    target: "_blank",
-    icon: <Image src="/icon3.svg" alt="分类" width={42} height={42} className="opacity-90 invert" />,
-  },
-  { name: "日常", href: "/daily" },
   { name: "关于", href: "/about" },
 ];
 

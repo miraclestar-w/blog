@@ -33,9 +33,9 @@ export default function AboutPage() {
       title: "站点含义",
       icon: <FiGlobe className="w-4 h-4" />,
       content: [
-        "在这个信息的荒原中，此站点旨在作为一个极简的锚点。",
-        "名字源于对效率与留白的某种执念，或者仅仅是一个随机生成的 ID。",
-        "我们在此记录碎片，在黑暗中寻找微弱的逻辑连线。"
+        "运维工程与 AI 交叉地带的长期笔记，偏实践、可复盘。",
+        "专注服务器运维、自动化工具与 AI Agent 应用。",
+        "把复杂系统拆成可观测、可复用、可自动化的工程能力。"
       ]
     },
     {
@@ -63,9 +63,8 @@ export default function AboutPage() {
       title: "通信协议",
       icon: <FiMessageCircle className="w-4 h-4" />,
       items: [
-        { label: "EMAIL", value: "your-email@example.com" },
-        { label: "GITHUB", value: "@your-username" },
-        { label: "TWITTER", value: "@your-handle" }
+        { label: "EMAIL", value: "qi.wang9409@gmail.com" },
+        { label: "GITHUB", value: "@miraclestar-w" }
       ]
     }
   ];

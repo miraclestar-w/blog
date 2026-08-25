@@ -54,8 +54,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MiniLoad",
-  description: "The darkness is boundless",
+  title: "Miracle",
+  description: "运维工程与 AI 交叉地带的长期笔记，偏实践、可复盘。",
   icons: {
     icon: [
       { url: "/icon3-white.svg", type: "image/svg+xml", sizes: "any" },
