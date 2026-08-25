@@ -8,7 +8,8 @@
     "build": "next build",
     "pages:build": "XDG_CONFIG_HOME=/tmp/.config VERCEL_CONFIG_DIR=/tmp/.vercel npx @cloudflare/next-on-pages@1",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:d1": "node scripts/generate-migration-sql.js && wrangler d1 execute blog-db --remote --file=migration.sql -y"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
