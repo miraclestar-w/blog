@@ -150,7 +150,7 @@ export async function POST(req: NextRequest) {
                     `<b>来自:</b> ${nickname}${isAdmin ? ' (管理员)' : ''}\n` +
                     `<b>联系方式:</b> ${contact || '无'}\n` +
                     `<b>内容:</b>\n${content}\n\n` +
-                    `<a href="https://your-domain.com/posts/${slug}">点击查看详情</a>`;
+                    `<a href="https://miracle.us.ci/posts/${slug}">点击查看详情</a>`;
 
                 // 使用 await 确保在 Edge Runtime 中发送完成
                 await sendTelegramNotification(tgToken, tgChatId, message);

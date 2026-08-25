@@ -68,7 +68,7 @@ export default async function PostPage({
         </div>
         <Comments
           pageId={slug}
-          pageUrl={`https://your-domain.com/posts/${slug}`}
+          pageUrl={`https://miracle.us.ci/posts/${slug}`}
           pageTitle={post.title}
         />
       </div>
