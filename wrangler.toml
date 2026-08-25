@@ -1,0 +1,9 @@
+name = "blog"
+pages_build_output_dir = ".vercel/output/static"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blog-db"
+database_id = "95c10941-bf62-4e80-bacf-e268a4d056da"
