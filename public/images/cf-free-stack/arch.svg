@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b6b7d"/>
+    </marker>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0e14"/>
+      <stop offset="1" stop-color="#101822"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="860" fill="#0a0e14"/>
+  <rect width="1280" height="64" fill="url(#hdr)"/>
+  <text x="40" y="40" fill="#7ee787" font-size="22">$ cloudflare --free-tier --all-in</text>
+  <text x="1240" y="40" fill="#3d4a5c" font-size="14" text-anchor="end">0 CNY / month</text>
+
+  <!-- ============ 左列：入口 ============ -->
+  <g>
+    <rect x="40" y="110" width="240" height="70" rx="8" fill="#111823" stroke="#2d3b4d" stroke-width="1.5"/>
+    <text x="160" y="140" fill="#e6edf3" font-size="16" text-anchor="middle">GitHub 仓库</text>
+    <text x="160" y="162" fill="#8b98a9" font-size="12" text-anchor="middle">push 触发自动构建</text>
+
+    <rect x="40" y="230" width="240" height="70" rx="8" fill="#111823" stroke="#2d3b4d" stroke-width="1.5"/>
+    <text x="160" y="260" fill="#e6edf3" font-size="16" text-anchor="middle">Telegram 频道</text>
+    <text x="160" y="282" fill="#8b98a9" font-size="12" text-anchor="middle">图片实体存储 + 备份归档</text>
+
+    <rect x="40" y="350" width="240" height="70" rx="8" fill="#111823" stroke="#2d3b4d" stroke-width="1.5"/>
+    <text x="160" y="380" fill="#e6edf3" font-size="16" text-anchor="middle">访客 / 用户</text>
+    <text x="160" y="402" fill="#8b98a9" font-size="12" text-anchor="middle">浏览器访问</text>
+  </g>
+
+  <!-- ============ 中间大框：Cloudflare 免费套餐 ============ -->
+  <rect x="340" y="96" width="900" height="730" rx="12" fill="#0d1420" stroke="#243447" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="365" y="130" fill="#79c0ff" font-size="15">Cloudflare Free Tier</text>
+  <text x="1215" y="130" fill="#3d4a5c" font-size="12" text-anchor="end">100k req/day · D1 5GB · AI free quota</text>
+
+  <!-- Pages -->
+  <g>
+    <rect x="380" y="150" width="250" height="86" rx="8" fill="#13202f" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="505" y="182" fill="#79c0ff" font-size="17" text-anchor="middle" font-weight="bold">Pages · 博客</text>
+    <text x="505" y="205" fill="#8b98a9" font-size="12" text-anchor="middle">Next.js 15 边缘渲染</text>
+    <text x="505" y="223" fill="#8b98a9" font-size="12" text-anchor="middle">D1 存文章/评论</text>
+  </g>
+
+  <!-- ImgBed -->
+  <g>
+    <rect x="700" y="150" width="250" height="86" rx="8" fill="#13202f" stroke="#7ee787" stroke-width="1.5"/>
+    <text x="825" y="182" fill="#7ee787" font-size="17" text-anchor="middle" font-weight="bold">Worker · 图床</text>
+    <text x="825" y="205" fill="#8b98a9" font-size="12" text-anchor="middle">D1 元数据 + 认证码鉴权</text>
+    <text x="825" y="223" fill="#8b98a9" font-size="12" text-anchor="middle">IP 日限额 · AI 自动打标</text>
+  </g>
+
+  <!-- d1-backup -->
+  <g>
+    <rect x="380" y="290" width="250" height="86" rx="8" fill="#13202f" stroke="#f0883e" stroke-width="1.5"/>
+    <text x="505" y="322" fill="#f0883e" font-size="17" text-anchor="middle" font-weight="bold">Worker · 每日备份</text>
+    <text x="505" y="345" fill="#8b98a9" font-size="12" text-anchor="middle">Cron 触发器 每天 05:00</text>
+    <text x="505" y="363" fill="#8b98a9" font-size="12" text-anchor="middle">D1 全库导出 SQL</text>
+  </g>
+
+  <!-- kb-api -->
+  <g>
+    <rect x="700" y="290" width="250" height="86" rx="8" fill="#13202f" stroke="#bc8cff" stroke-width="1.5"/>
+    <text x="825" y="322" fill="#bc8cff" font-size="17" text-anchor="middle" font-weight="bold">Worker · 知识库 RAG</text>
+    <text x="825" y="345" fill="#8b98a9" font-size="12" text-anchor="middle">Workers AI 向量化</text>
+    <text x="825" y="363" fill="#8b98a9" font-size="12" text-anchor="middle">Vectorize 语义检索</text>
+  </g>
+
+  <!-- shot-api -->
+  <g>
+    <rect x="380" y="430" width="250" height="86" rx="8" fill="#13202f" stroke="#ff7b72" stroke-width="1.5"/>
+    <text x="505" y="462" fill="#ff7b72" font-size="17" text-anchor="middle" font-weight="bold">Worker · 截图 API</text>
+    <text x="505" y="485" fill="#8b98a9" font-size="12" text-anchor="middle">Browser Rendering 无头浏览器</text>
+    <text x="505" y="503" fill="#8b98a9" font-size="12" text-anchor="middle">网页转 PNG / 取标题</text>
+  </g>
+
+  <!-- Email Routing -->
+  <g>
+    <rect x="700" y="430" width="250" height="86" rx="8" fill="#13202f" stroke="#d2a8ff" stroke-width="1.5"/>
+    <text x="825" y="462" fill="#d2a8ff" font-size="17" text-anchor="middle" font-weight="bold">Email Routing</text>
+    <text x="825" y="485" fill="#8b98a9" font-size="12" text-anchor="middle">catch-all → 收信 Worker</text>
+    <text x="825" y="503" fill="#8b98a9" font-size="12" text-anchor="middle">别名直转 Gmail</text>
+  </g>
+
+  <!-- 底层存储层 -->
+  <rect x="380" y="570" width="570" height="100" rx="8" fill="#101a26" stroke="#243447" stroke-width="1.5"/>
+  <text x="665" y="600" fill="#8b98a9" font-size="13" text-anchor="middle">─ 存储层 ─</text>
+  <g>
+    <rect x="410" y="615" width="150" height="38" rx="6" fill="#1a2634" stroke="#2d3b4d"/>
+    <text x="485" y="639" fill="#e6edf3" font-size="13" text-anchor="middle">D1 × 数据库</text>
+    <rect x="590" y="615" width="150" height="38" rx="6" fill="#1a2634" stroke="#2d3b4d"/>
+    <text x="665" y="639" fill="#e6edf3" font-size="13" text-anchor="middle">KV 会话/配置</text>
+    <rect x="770" y="615" width="150" height="38" rx="6" fill="#1a2634" stroke="#2d3b4d"/>
+    <text x="845" y="639" fill="#e6edf3" font-size="13" text-anchor="middle">边缘缓存</text>
+  </g>
+
+  <!-- DNS/CDN 条 -->
+  <rect x="380" y="700" width="820" height="90" rx="8" fill="#101a26" stroke="#243447" stroke-width="1.5"/>
+  <text x="790" y="730" fill="#8b98a9" font-size="13" text-anchor="middle">─ 基础设施（8 个域名全部托管）─</text>
+  <text x="790" y="762" fill="#7ee787" font-size="15" text-anchor="middle">免费 DNS · CDN 加速 · DDoS 防护 · SSL 证书 · WAF</text>
+
+  <!-- ===== 连线 ===== -->
+  <!-- github -> pages -->
+  <line x1="280" y1="145" x2="376" y2="185" stroke="#5b6b7d" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- visitor -> pages/imgbed -->
+  <line x1="280" y1="385" x2="500" y2="240" stroke="#5b6b7d" stroke-width="1.2" opacity="0.55" marker-end="url(#arrow)"/>
+  <!-- pages -> imgbed: 博客引用图床? no. imgbed -> TG -->
+  <line x1="700" y1="193" x2="284" y2="265" stroke="#5b6b7d" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="480" y="215" fill="#6e7f93" font-size="11">原图存 TG</text>
+  <!-- imgbed -> D1 layer -->
+  <line x1="825" y1="236" x2="750" y2="566" stroke="#5b6b7d" stroke-width="1.2" opacity="0.6" marker-end="url(#arrow)"/>
+  <!-- backup -> TG -->
+  <path d="M 380 333 L 300 333 L 300 275 L 284 268" fill="none" stroke="#f0883e" stroke-width="1.4" opacity="0.85" marker-end="url(#arrow)"/>
+  <text x="308" y="320" fill="#f0883e" font-size="11" opacity="0.9">SQL 备份包</text>
+  <!-- kb -> AI/vectorize implicit inside box -->
+  <!-- shot -> visitor? skip -->
+
+  <!-- footer note -->
+  <text x="40" y="850" fill="#3d4a5c" font-size="12">// 全部服务运行在 Cloudflare 免费套餐内，月成本 ¥0；敏感端点均带 Token 鉴权</text>
+</svg>
